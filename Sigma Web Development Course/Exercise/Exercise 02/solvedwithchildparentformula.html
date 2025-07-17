@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paragraph Styling</title>
+  <style>
+    /* Style the first paragraph inside the div */
+    div p:first-child {
+      background-color: yellow;
+      color: red;
+      padding: 10px;
+    }
+
+    /* Style all other paragraphs inside the div (except the first one) */
+    div p:not(:first-child) {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <p>This is the first paragraph (Yellow background, Red text).</p>
+    <p>This is the second paragraph (Blue background, White text).</p>
+    <p>This is the third paragraph (Blue background, White text).</p>
+    <p>This is the fourth paragraph (Blue background, White text).</p>
+    <p>This is the fifth paragraph (Blue background, White text).</p>
+  </div>
+
+</body>
+</html>
