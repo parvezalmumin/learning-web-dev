@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ellipsis Example</title>
+  <style>
+    .card {
+      width: 300px;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      margin: 2rem auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+
+      /* KEY PROPERTIES for ellipsis */
+      white-space: nowrap;      /* Don't allow wrapping */
+         overflow: hidden;         /* Hide overflow */      
+      text-overflow: ellipsis;  /* Show ... */
+    
+      
+      /* Optional: force it to be exactly 1 line */
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <span class="product-title">
+      Premium Super Comfort Ultra Long Named Hoodie For Winter Season.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos dolore natus odit porro? Debitis illum optio doloribus explicabo placeat quis modi voluptate excepturi tempora officia, sequi quibusdam asperiores eos?
+    </span>
+  </div>
+
+</body>
+</html>
