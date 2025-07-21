@@ -1,0 +1,9 @@
+ /* External CSS file: style.css */
+
+/* This class is used by the third paragraph */
+.external-style {
+  color: green;
+  font-family: 'Courier New', monospace;
+  background-color: #e8f5e9;
+  padding: 10px;
+}

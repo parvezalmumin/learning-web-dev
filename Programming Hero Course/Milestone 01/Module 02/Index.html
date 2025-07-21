@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Types Example</title>
+
+  <!-- Internal CSS: Styles written inside the <style> tag -->
+  <style>
+    /* This style will apply to the second paragraph (p with class 'internal-style') */
+    .internal-style {
+      color: blue;
+      font-style: italic;
+      background-color: #e0f7fa;
+      padding: 10px;
+    }
+  </style>
+
+  <!-- External CSS: Linking an external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Inline CSS: Style applied directly inside the tag -->
+  <p style="color: red; font-weight: bold; background-color: #ffe0e0; padding: 10px;">
+    This is the first paragraph with <strong>inline CSS</strong>.
+  </p>
+
+  <!-- Internal CSS: Uses a class defined in the <style> tag -->
+  <p class="internal-style">
+    This is the second paragraph styled with <strong>internal CSS</strong>.
+  </p>
+
+  <!-- External CSS: Uses a class defined in style.css file -->
+  <p class="external-style">
+    This is the third paragraph styled using <strong>external CSS</strong>.
+  </p>
+
+</body>
+</html>
