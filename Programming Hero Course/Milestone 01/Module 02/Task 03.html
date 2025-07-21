@@ -1,0 +1,80 @@
+ <!--Task 3 
+Selectors  Challenge 
+-Create and HTML document with various elements, including headings, paragraphs and divs
+-Use different CSS Selectors (id, class, universal, tag ) to apply unique styles to specific elements-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+
+  <style>
+    /* 🔹 Universal Selector: Applies to all elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    /* 🔹 Tag Selector: Targets all <h1> elements */
+    h1 {
+      color: navy;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* 🔹 Class Selector: Targets elements with class="highlight" */
+    .highlight {
+      background-color: #fce4ec;
+      color: deeppink;
+      padding: 10px;
+      border-left: 5px solid deeppink;
+      margin: 10px 20px;
+    }
+
+    /* 🔹 ID Selector: Targets the element with id="special-paragraph" */
+    #special-paragraph {
+      font-style: italic;
+      font-size: 18px;
+      color: darkgreen;
+      margin: 10px 20px;
+    }
+
+    /* 🔹 Tag Selector: All <div> elements */
+    div {
+      background-color: #e0f7fa;
+      border: 1px solid #0097a7;
+      padding: 15px;
+      margin: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1>CSS Selectors in Action</h1>
+
+  <!-- Paragraph with ID -->
+  <p id="special-paragraph">
+    This paragraph is styled using an <strong>ID selector</strong>.
+  </p>
+
+  <!-- Paragraph with Class -->
+  <p class="highlight">
+    This paragraph uses a <strong>class selector</strong> to apply styles.
+  </p>
+
+  <!-- Another Paragraph -->
+  <p>
+    This is a regular paragraph without any special selector.
+  </p>
+
+  <!-- Div Element -->
+  <div>
+    This is a <strong>div</strong> styled using a <strong>tag selector</strong>.
+  </div>
+
+</body>
+</html>
